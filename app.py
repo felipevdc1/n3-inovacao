@@ -13,9 +13,8 @@ stores = [
             }
         ]
     }
-    
-]
 
+]
 
 
 @app.route('/')  # ex: 'http://www.google.com/' - home
