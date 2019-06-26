@@ -1,0 +1,24 @@
+pre-requisitos:
+1. importar todas as libs
+2. excluir o arquivo data.db caso ele esteja na pasta "section 5 - adding sqlite"
+
+sequencia para teste:
+1. acessar: n3-inovacao > section 5 - adding sqlite > code
+2. abrir o terminal e rodar create_tables.py
+3. ainda no terminal, rodar app.py
+
+no postman:
+1. na pagina principal, selecionar "import"
+2. inserir o arquivo "n3-inovacao-testes-postman"
+3. dentro da pasta testes, seguir a ordem de testes:
+
+postman - testes:
+
+1. post /register
+2. post /item/<name>
+3. get /items
+4. put /item/<name> 
+5. post /auth - no retorno copiar o conteudo de "access_token" que esta dentro das aspas
+6. get /item/<name> - antes de usar a requisicao, na aba header em value, ajustar para "jwt <token copiado no item 5"
+7. del /item/<name>
+8. get /items final
